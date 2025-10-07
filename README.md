@@ -62,3 +62,71 @@ This project builds upon that foundation by integrating **macroeconomic**, **com
    - **Rate Regime (RR):** 3-month change in Federal Funds Rate.  
 
 3. **Composite Score (C<sub>t</sub>):**  
+- If C<sub>t</sub> ≥ 0.75 → Overweight energy positions  
+- If C<sub>t</sub> ≤ -0.75 → Underweight or hedge  
+- Otherwise → Neutral  
+
+4. **ETF Strategy Rules**
+- Portfolio tilts applied to a baseline energy exposure (e.g., XLE or equal-weight XOM/CVX).  
+- 10-day moving-average filter to smooth signals.  
+- Max position change: 15 percentage points per day.  
+- Target volatility: 12% annualized.
+
+5. **Evaluation**
+- Correlation and lag analysis between macro signals and returns.  
+- Event studies around major WTI shocks and OPEC news.  
+- Regression of future returns on composite signals.  
+- Metrics: Information coefficient (IC), hit rate, and Sharpe ratio.
+
+---
+
+## Results (Preliminary)
+
+Initial exploratory analysis yielded several observations:
+- **Strong correlation** between WTI daily returns and energy stock performance (ρ ≈ 0.65).  
+- **Asymmetric effects:** Negative oil shocks have a larger downside impact on equities than positive shocks have upside impact.  
+- **Inventory surprises** correlate more strongly during high-volatility regimes.  
+- **Sentiment signals** add predictive value on ambiguous oil-movement days (neutral or small ΔWTI).  
+
+Figures produced so far:
+- `figures/price_series_xom_cvx_wti.png` – Price trajectories 2018–2024  
+- `figures/event_study_wti.png` – Average energy stock reaction ±5 days around major oil shocks  
+- `figures/corr_heatmap.png` – Correlation among macro, sentiment, and return features  
+
+These results indicate that macro-event signals have potential as **timing and risk-control mechanisms** for an actively managed ETF.
+
+---
+
+## Conclusions
+
+The proposed **Macro-Linked Energy ETF** aims to translate macroeconomic and event-based insights into a transparent, rules-based trading framework.  
+Early results support the feasibility of a **composite macro-sentiment score** as a driver for dynamic sector weighting.  
+
+**Concerns and next steps:**
+- Data availability and synchronization (especially EIA and RSS timing) remain challenges.  
+- The backtesting framework must incorporate **transaction costs and slippage**.  
+- Further robustness tests needed to confirm predictive power out-of-sample.  
+
+Future work will include completing the ETF **prospectus**, formalizing the algorithmic trading rules, and validating performance against benchmark indices.
+
+---
+
+## References
+
+- Carver, C. (2015). *Systematic Trading: A Unique New Method for Designing Trading and Investing Systems*.  
+- Clenow, A. (2023). *Trading Evolved: Anyone Can Build Killer Trading Strategies in Python*.  
+- Covel, M. (2017). *Trend Following*.  
+- Grinold, R., & Kahn, R. (2000). *Active Portfolio Management*.  
+- Greyserman, A., & Kaminski, K. (2014). *Trend Following with Managed Futures*.  
+- Hamilton, J. (2009). *Causes and Consequences of the Oil Shock of 2007–08*, *Brookings Papers on Economic Activity*.  
+- Markowitz, H. (1952). *Portfolio Selection*, *Journal of Finance*.  
+- Sharpe, W. (1963). *Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk*.  
+- Zuckerman, G. (2019). *The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution*.  
+- Harris, J. (2023). *Commodity ETFs Explained*.  
+
+---
+
+**Author:** Vrishani Shah  
+**Course:** MSDS 413 – Time Series and Forecasting  
+**Instructor:** Tom Miller  
+**Date:** October 2025
