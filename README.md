@@ -82,19 +82,9 @@ This project builds upon that foundation by integrating **macroeconomic**, **com
 
 ## Results (Preliminary)
 
-Initial exploratory analysis yielded several observations:
-- **Strong correlation** between WTI daily returns and energy stock performance (ρ ≈ 0.65).  
-- **Asymmetric effects:** Negative oil shocks have a larger downside impact on equities than positive shocks have upside impact.  
-- **Inventory surprises** correlate more strongly during high-volatility regimes.  
-- **Sentiment signals** add predictive value on ambiguous oil-movement days (neutral or small ΔWTI).  
-
-Figures produced so far:
-- `figures/price_series_xom_cvx_wti.png` – Price trajectories 2018–2024  
-- `figures/event_study_wti.png` – Average energy stock reaction ±5 days around major oil shocks  
-- `figures/corr_heatmap.png` – Correlation among macro, sentiment, and return features  
-
-These results indicate that macro-event signals have potential as **timing and risk-control mechanisms** for an actively managed ETF.
-
+From initial review of historical Yahoo Finance charts, both ExxonMobil (XOM) and Chevron (CVX) show strong co-movement with crude oil prices. The largest drawdowns correspond to major macro events — notably the 2020 oil price collapse and early 2022 supply disruptions.
+Based on literature and early data inspection, energy equities tend to react more strongly to negative oil shocks than to positive ones.
+A challenge so far has been merging data from multiple APIs, especially aligning daily prices with weekly or monthly economic indicators. These challenges will shape the cleaning and alignment methods in the next phase.
 ---
 
 ## Conclusions
