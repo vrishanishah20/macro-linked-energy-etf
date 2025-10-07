@@ -85,12 +85,13 @@ This project builds upon that foundation by integrating **macroeconomic**, **com
 From initial review of historical Yahoo Finance charts, both ExxonMobil (XOM) and Chevron (CVX) show strong co-movement with crude oil prices. The largest drawdowns correspond to major macro events — notably the 2020 oil price collapse and early 2022 supply disruptions.
 Based on literature and early data inspection, energy equities tend to react more strongly to negative oil shocks than to positive ones.
 A challenge so far has been merging data from multiple APIs, especially aligning daily prices with weekly or monthly economic indicators. These challenges will shape the cleaning and alignment methods in the next phase.
+
+
 ---
 
 ## Conclusions
-
 The proposed **Macro-Linked Energy ETF** aims to translate macroeconomic and event-based insights into a transparent, rules-based trading framework.  
-Early results support the feasibility of a **composite macro-sentiment score** as a driver for dynamic sector weighting.  
+Early results support the feasibility of a **composite macro-sentiment score** as a driver for dynamic sector weighting. 
 
 **Concerns and next steps:**
 - Data availability and synchronization (especially EIA and RSS timing) remain challenges.  
