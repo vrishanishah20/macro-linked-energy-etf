@@ -116,7 +116,7 @@ Backtesting scheduled for Checkpoint C.
 
 ---
 
-** Submission Checklist**  
+**Submission Checklist**  
 - File named `Checkpoint_B_Report.pdf`  
 - Contains summary tables, preliminary results, and next steps  
 - Uploaded to GitHub and/or Canvas submission portal
