@@ -1,0 +1,2 @@
+avg_annual_return,std_annual_return,avg_sharpe_ratio,avg_volatility,avg_max_drawdown,worst_window_return,best_window_return,percent_positive_windows,total_windows
+3.614760240639167,17.69984073492383,0.31367716646048927,20.405755351244625,-19.699794982978098,-29.358204630728036,41.77020726296379,64.70588235294117,17
