@@ -513,6 +513,19 @@ This project is for **educational and research purposes only**.
 The conclusion that this fund is "not viable" is based on historical backtesting and does not constitute financial, legal, or professional advice.
 
 ---
+## GenAI Tools Used
+
+This project used generative AI tools (ChatGPT GPT-5.0, OpenAI, 2025) to assist with:
+- Literature review summarization
+- Report structure & writing refinement
+- Debugging Python code
+- Organizing repository structure
+- Creating final README.md
+All quantitative analysis, modeling, programming, results generation, and conclusions were performed by the author.
+AI-generated content was verified, corrected, and validated manually.
+Conversation logs are preserved in the submitted screenshots and ChatGPT session transcripts.
+
+---
 
 ## 🙏 Acknowledgments
 
