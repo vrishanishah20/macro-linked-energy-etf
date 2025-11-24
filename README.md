@@ -80,6 +80,31 @@ macro-linked-energy-etf/
 ```
 
 ---
+## Contents of the Final Report
+
+The final report contains:
+- Introduction
+- Literature Review
+- Methods
+- Data sources
+- Feature engineering (drawdowns, beta, Sharpe, macro sensitivities, etc.)
+- Portfolio strategies
+- Backtesting design
+- Monte Carlo simulation
+- Walk-forward validation
+- Fee structure modeling
+- Results
+- Full-period performance
+- CAPM Alpha/Beta
+- Monte Carlo outcomes
+- Walk-forward out-of-sample performance
+- Fee impact
+- Management Recommendation
+- Conclusion
+Appendices
+References
+
+---
 
 ## 📈 Data Sources
 
